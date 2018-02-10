@@ -12,7 +12,7 @@ return [
 		'model.prefix'		=> '_model',
 		'helper.prefix'		=> '_helper',
 		'library.prefix'	=> '_lib',
-		'base_url'			=> '',
+		'base_url'		=> '',
 		'handle_errors'		=> true,
 		'log_errors'		=> true
 	]
