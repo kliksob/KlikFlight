@@ -4,11 +4,11 @@ This is my first project.
 
 KlikFlight is a Web Application Framework based on Micro Framework Flight That is very light for a small website and very good for restfull applications.
 
-# How to Use.
+## How to Use.
 
 There are two options for you when you want to install this application for your project.
 
-# The first way.
+### The first way.
 
 This is the way I recommend.
 Use Composer Autoloader.
@@ -16,28 +16,30 @@ Since I have not published this repository to Packagist yet. The alternative is 
 
 Type in your terminal.
 
+```shell
 $ ~ composer update
+```
 
-# The second way.
+### The second way.
 
 By Changing File Index.php
 
 Please Uncomment
-<?php
+```php
 // require_once APPPATH. '/src/vendor/autoload.php';
-?>
+```
 
 And Add a comment on the line
-<?php
+```php
 require_once APPROOT. '/vendor/autoload.php';
-?>
+```
 
 This will work without Composer. Recommended for small projects.
 
-# Configuration
+#### Configuration
 /app/config.php
 
-<?php
+```php
 return [
 	/* Basic Config */
 	'config' => [
@@ -56,12 +58,12 @@ return [
 		'log_errors'		=> true
 	]
 ];
-?>
+```
 
-# Routing
+#### Routing
 /app/route.php
 
-<?php
+```php
 /**
  * Object Method Routing
  */
@@ -109,21 +111,28 @@ Flight::route('/regular', function(){
 	print_r(Flight::app());
 	
 });
+```
 
 Added by me. And the following features are not in the flight framework.
 For More Information About Routing Please See http://flightphp.com/learn/#routing
 
 
-# Loading Model
+#### Loading Model
+```php
 Flight::model('modelname', $args = array()); // Model Name Without Prefix
+```
 This Will Get Model Instance.
 
-# Loading Library
+#### Loading Library
+```php
 Flight::library('libraryname', $args = array()); // Library Name Without Prefix.
+```
 This Will Get Model Instance.
 
-# Loading Helper
+#### Loading Helper
+```php
 Flight::model('helpername', $args = array()); // Helper Name Without Prefix
+```
 This Will Include Your Helper.
 
 More Documentation Information About Flight http://flightphp.com/learn/
