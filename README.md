@@ -34,8 +34,9 @@ $app->start();
 
 
 ### The second way.
+Download this repository
 
-By Changing File Index.php
+And Change index.php File
 
 Please Uncomment
 ```php
