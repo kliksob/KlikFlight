@@ -12,13 +12,26 @@ There are two options for you when you want to install this application for your
 
 This is the way I recommend.
 Use Composer Autoloader.
-Since I have not published this repository to Packagist yet. The alternative is the way you download this repository.
 
 Type in your terminal.
 
 ```shell
+$~ composer require kliksob/klikflight
 $~ composer update
 ```
+Create index.php File in your public root Directory.
+```php
+<?php
+/**
+ * This is Index.php File If you Use public directory
+ */
+define('APPROOT', __DIR__); // set root directory. not public
+define('APPPATH', APPROOT. '/app'); // set your application directory
+require_once APPROOT. '/vendor/autoload.php';
+$app = new KlikFlight\App();
+$app->start();
+```
+
 
 ### The second way.
 
