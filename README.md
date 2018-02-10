@@ -131,7 +131,7 @@ This Will Get Model Instance.
 
 #### Loading Helper
 ```php
-Flight::model('helpername', $args = array()); // Helper Name Without Prefix
+Flight::helper('helpername', $args = array()); // Helper Name Without Prefix
 ```
 This Will Include Your Helper.
 
