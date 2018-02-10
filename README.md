@@ -2,7 +2,7 @@ This is my first project.
 
 # Welcome to my new repository.
 
-KlikFlight is a Web Application Framework based on Micro Framework Flight That is very light for a small website and very good for restfull applications.
+KlikFlight is a Web Application Framework based on Flight Micro Framework That is very light for a small website and very good for restfull applications.
 
 ## How to Use.
 
@@ -17,7 +17,7 @@ Since I have not published this repository to Packagist yet. The alternative is 
 Type in your terminal.
 
 ```shell
-$ ~ composer update
+$~ composer update
 ```
 
 ### The second way.
