@@ -114,8 +114,43 @@ Flight::route('/regular', function(){
 ```
 
 Added by me. And the following features are not in the flight framework.
-For More Information About Routing Please See http://flightphp.com/learn/#routing
+For More Information About Routing Engine Please See http://flightphp.com/learn/#routing
 
+#### Using Flight::routeController();
+```php
+<?php
+class Example{
+	public function __construct(){
+		// the constructor
+	}
+	public function anyIndex(){
+		echo 'i am receipe anything';
+		//This Will get Anything method * http://example.com/controller/ or http://example.com/controller/index
+	}
+	public function getData($var1 = '', $var2 = null){
+		echo 'i am receipe get';
+		// This will only GET method like http://example.com/controller/data(/@var1)(/@var2)
+	}
+	public function postData(){
+		echo 'i am receipe post';
+		// This will only POST method like http://example.com/controller/data
+	}
+	public function putData(){
+		echo 'i am receipe put';
+		// This will only PUT method like http://example.com/controller/data
+	}
+	public function deleteData(){
+		echo 'i am receipe delete';
+		// This will only DELETE method like http://example.com/controller/data
+	}
+}
+```
+```php
+Flight::routeController('/controller', 'Example');
+// You can Pass With Namespace
+Flight::routeController('/controller', 'Mynamespace\Example');
+```
+Please note: Static Class Does not Work.
 
 #### Loading Model
 ```php
