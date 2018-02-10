@@ -1,5 +1,5 @@
-# flightMVC
-Simple Flightphp MVC
+# KlikFlight
+Simple Web Application Framework. Use Flight
 
 # How To Use
 
