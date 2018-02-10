@@ -1,6 +1,7 @@
 {
     "name": "kliksob/klikflight",
     "description": "KlikFlight Is a Flight MicroFramework MVC Application Architecture. Flight is a fast, simple, extensible framework for PHP. Flight enables you to quickly and easily build RESTful web applications.",
+    "keywords": ["framework", "restfull", "rest", "web", "routing", "flightphp", "flight"],
     "homepage": "http://kliksob.net",
     "license": "MIT",
     "authors": [
